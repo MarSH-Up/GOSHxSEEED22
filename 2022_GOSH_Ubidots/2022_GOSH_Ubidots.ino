@@ -32,7 +32,7 @@
 #include <Wire.h>
 
 // UBIDOTS Credentials
-#define TOKEN "BBFF-ToyE9nL8ZUsW0SSWGxB516Jt6BP5Qa" // Put your Ubidots' TOKEN
+#define TOKEN "" // Put your Ubidots' TOKEN
 #define DEVICE_LABEL "wioterminal" // Assign the device label
 #define MQTT_CLIENT_NAME "MdlsSeeed02" // MQTT client Name (random name)
 char mqttBroker[] = "industrial.api.ubidots.com";
@@ -150,7 +150,7 @@ float* Temp_Humid_extraction(){
 }
 void setup() {
   Serial.begin(9600);
-  Wifi_WioTerminal("INFINITUM2F24_2.4", "RN5sDQTMt7"); 
+  Wifi_WioTerminal("SSID", "password"); 
   pinMode(WIO_LIGHT, INPUT);
 
   while(!Serial); 
